@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles.css">
+    <title>My trip</title>
+</head>
+<body class="min-w-[300px] h-screen overflow-hidden">
+    <!-- Navbar -->
+    <header class="absolute w-full p-6 z-10">
+       <div class="max-w-[1400px] mx-auto flex items-center justify-between text-white">
+        <a href="" class="text-2xl">Trip<strong>AFRIC</strong></a>
+        <div class="relative flex gap-6 items-center px-14">
+
+            <a href="#" class="textwhite uppercase hover:text-orange-400">Home</a>
+            <a href="#" class="textwhite uppercase hover:text-orange-400">Stories</a>
+            <a href="#" class="textwhite uppercase hover:text-orange-400">Trips</a>
+            <a href="contact.html" target="_self" class="textwhite uppercase hover:text-orange-400">Contacts</a>
+            <div class="flex ">
+                <ion-icon name="search-outline" class="text-xl cursor-pointer hover:text-orange-400"></ion-icon>
+            </div>
+            <div id="search-box" class="hidden absolue top-10 right-0">
+                <div id="input-box" class="p-3 bg-white rounded-full">
+                    <input type="text" placeholder="search..." class="focus:outline-none text-black">
+                </div>
+
+            </div>
+            
+
+        </div>
+       </div>
+    </header>
+
+    <main>
+        <section id="hero" class="relative w-full h-screen bg-[url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-black/50 bg-blend-multiply bg-center bg-cover bg-no-repeat flex items-center">
+
+            <!-- hero content -->
+             <div class="container  mx-auto max-w-[1200px] text-white p-8">
+                <h1 class="text-5xl font-light leadding-tight tracking-wider mb-6">Experience Alps <br/> from a new perspective</h1>
+
+                <div class="flex items-center gap-4 mb-8">
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    <span class=""text-sm uppercase text-gray-300>read more</span>
+                </div>
+
+                <a href="#" class="inline-block mt-6  py-3 px-6 bg-orange-400 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-110 active:scale-95 transition duration-150">get started</a>
+
+    
+             </div>
+                <!-- Social media -->
+                 
+
+             <div class="absolute right-1/2 bottom-4 md:right-4 md:bottom-1/2 translate-y-1/2">
+                <div class="text-white p-4 flex md:flex-col gap-8 items-center text-2xl md:right-4 bottom-4 ">
+
+                    <ion-icon name="logo-facebook" class="cursor-pointer hover:scale-110"></ion-icon>
+                    <ion-icon name="logo-google" class="cursor-pointer hover:scale-110"></ion-icon>
+                    <ion-icon name="logo-whatsapp" class="cursor-pointer hover:scale-110"></ion-icon>
+                    <ion-icon name="logo-tiktok" class="cursor-pointer hover:scale-110"></ion-icon>
+    
+                </div>
+             </div>
+            
+
+            <!-- Testimony -->
+             <div class="hidden absolute  bottom-4 w-full h-36 md:flex">
+                <!-- Arrow -->
+                <div class="text-white flex items-center justify-center text-4xl">
+                    <ion-icon name="chevron-back-outline" class="cursor-pointer hover:scale-110"></ion-icon>
+                    <ion-icon name="chevron-forward-outline" class="cursor-pointer hover:scale-110"></ion-icon>
+                </div>
+                
+                <!-- images -->
+
+                <div class="w-full h-full bg-gray-200 grid grid-cols-3 gap-4 p-4 m-4">
+                    <!-- img1 -->
+                     <div class="flex items-center gap-4">
+                        <img src="img/glob.jpg" alt="globe" class="w-[200px] h-[100px] object-cover">
+                        <div>
+                            <h1 class="font-bold mb-6">Attract 1</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, in!</p>
+                        </div>
+
+                     </div>
+
+                     <!-- img2 -->
+                     <div class="hidden lg:flex items-center gap-4">
+                        <img src="img/glob.jpg" alt="globe" class="w-[200px] h-[100px] object-cover">
+                        <div>
+                            <h1 class="font-bold mb-6">Attract 2</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, in!</p>
+                        </div>
+
+                     </div>
+
+                     <!-- img3 -->
+                     <div class="hidden xl:flex items-center gap-4">
+                        <img src="img/glob.jpg" alt="globe" class="w-[200px] h-[100px] object-cover">
+                        <div>
+                            <h1 class="font-bold mb-6">Attract 3</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, in!</p>
+                        </div>
+
+                     </div>
+
+                </div>
+
+             </div>
+            
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

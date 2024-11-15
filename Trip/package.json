@@ -1,0 +1,19 @@
+{
+  "name": "trip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/styles.css",
+    "build-contact": "tailwindcss build src/stylecontact.css -o public/stylescontact.css"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
