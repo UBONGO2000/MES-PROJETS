@@ -10,15 +10,17 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class FirstController extends AbstractController
 {
-    #[Route('/first',name:'first')]
+    #[Route('/first/{name}',name:'first')]
     public function index(): Response
     {
+    
         return $this->render('index.html.twig',[
             'Controller_name' => 'FirstController',
+            'name'=>'georges'
         ]);
 
-        // return new Response(
-        //     "<h1>Hello new response</h1>"
-        // );
+        //  return new Response(
+        //      "<h1>Hello new response</h1>"
+        //  );
     }
 }
