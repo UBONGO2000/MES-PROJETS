@@ -12,8 +12,7 @@
 
     <ol class="list-group">
         {% for cle,element in app.session.get('todos') %}
-            <li class="list-group-item font-bold">{{ cle }}</li>
-            <li class="list-group-item font-bold">{{ element }}</li>
+            <li class="list-group-item font-bold">{{ cle }} : {{ element }}</li>
         {% endfor %}
     </ol>
 
