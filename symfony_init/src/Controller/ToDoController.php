@@ -27,17 +27,28 @@ class ToDoController extends AbstractController
         return $this->render('to_do/index.html.twig');
     }
 
-    #[Route('/todo/{name}/{content}',name:'todo.add')]
+    #[Route('/todo/add/{name}/{content}',name:'todo.add')]
     public function addToDo(Request $request, $name , $content): Response{
 
         $session = $request->getSession();
         //si ma session a deja un todos alors je l'affiche
         if ($session->has('todos')){
-            $todos = $session->get('todo');
+            $todos = $session->get('todos');
+            //Si l'id existe déja dans notre todo on leve une erreur
+            if(isset($todos[$name])){
+                $this->addFlash('error',"Le todo d'id $name existe déjà dans la liste");
+            }else{
+                $todos[$name] = $content;
+                $this->addFlash('success',"Le todo d'id $name a été ajouter");
+                $session->set('todos',$todos);
+            }
         }
         //sinon je retourne une erreur
         else{
             $this->addFlash('error',"La liste todos n'est pas encore initialiser !!!");
         }
-    }
+
+        
+        return $this->redirectToRoute('app_to_do');
+}
 }
