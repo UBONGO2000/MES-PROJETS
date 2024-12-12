@@ -14,7 +14,7 @@ class FirstController extends AbstractController
     public function index(): Response
     {
     
-        return $this->render('index.html.twig',[
+        return $this->render('detail.html.twig',[
             'Controller_name' => 'FirstController',
             'name'=>'georges'
         ]);

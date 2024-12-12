@@ -20,6 +20,12 @@ class Personne
     #[ORM\Column(type: Types::SMALLINT)]
     private ?int $age = null;
 
+    #[ORM\Column(length: 50)]
+    private ?string $Lastname = null;
+
+    #[ORM\Column(length: 100)]
+    private ?string $trade = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -45,6 +51,30 @@ class Personne
     public function setAge(int $age): static
     {
         $this->age = $age;
+
+        return $this;
+    }
+
+    public function getLastname(): ?string
+    {
+        return $this->Lastname;
+    }
+
+    public function setLastname(string $Lastname): static
+    {
+        $this->Lastname = $Lastname;
+
+        return $this;
+    }
+
+    public function getTrade(): ?string
+    {
+        return $this->trade;
+    }
+
+    public function setTrade(string $trade): static
+    {
+        $this->trade = $trade;
 
         return $this;
     }
