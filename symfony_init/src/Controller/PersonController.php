@@ -21,6 +21,8 @@ class PersonController extends AbstractController
         $person->setAge(30);
         //ajout de l'operation d'insertion de la personne dans ma transaction
         $entityManager->persist($person);
+
+        //execution la transaction
         $entityManager->flush();
         return $this->render('personne/detail.html.twig', [
             'person' => $person,
