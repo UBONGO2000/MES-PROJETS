@@ -1,10 +1,17 @@
-<h1>bonjour {{ person.firstname }}</h1>
-{{ dump(person) }}
-
 {% block body %}
 
-<div class="alert alert-success" role="alert">
-    {{ person.firstname }} {{ person.lastname }} a {{ person.age }} et est {{ person.trade }}
+<div class="row">
+    {% for personne in personnes %}
+    <div class="card" style="width: 18rem">
+        <div class="card-body">
+            <h5 class="card-title">{{ personne.lastname }}</h5>
+            <h6 class="card-subtitle mb62 text-nuted">{{ personne.firstname }} {{ personne.lastname }}</h6>
+            <p class="card text">Age : {{ personne.age }}</p>
+            <a href="#" class="card-link">Card Link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 
 {% endblock %}

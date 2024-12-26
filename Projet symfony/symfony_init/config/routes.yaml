@@ -1,0 +1,24 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+acceuil:
+    path: /acceuil
+    controller: App\Controller\HomeController::bonjour
+
+redirecttoroute:
+    path: /redirecttoroute
+    controller: App\Controller\HomeController::aurevoir
+
+redirecttolinkeding:
+    path: /redirecttolinkeding
+    controller: App\Controller\HomeController::redirectToLinkeding
+
+routetemplate:
+    path: /template
+    controller: App\Controller\HomeController::rte
+showrequest:
+    path: /showrequest
+    controller: App\Controller\HomeController::showrequest

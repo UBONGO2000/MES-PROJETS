@@ -1,5 +1,7 @@
 package modele;
 
+import java.util.Scanner;
+
 public abstract class User {
 
     private int ID;
@@ -59,6 +61,8 @@ public abstract class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    public abstract void showListe(Database database, Scanner sc);
 
     public abstract void showListe();
 }

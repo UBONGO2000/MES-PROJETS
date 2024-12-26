@@ -1,9 +1,17 @@
 package modele;
 
+import java.util.Scanner;
+
 public class Client extends User{
     public Client(){
         super();
     }
+
+    @Override
+    public void showListe(Database database, Scanner sc) {
+
+    }
+
     @Override
     public void showListe() {
         System.out.println("\n1. View Cars");

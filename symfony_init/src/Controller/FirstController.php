@@ -7,6 +7,8 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
 class FirstController extends AbstractController
 {
@@ -23,4 +25,21 @@ class FirstController extends AbstractController
         //      "<h1>Hello new response</h1>"
         //  );
     }
+
+
+}
+
+
+class AppExtension extends AbstractExtension
+{
+    public function getFunctions(){
+        return [new TwigFunction('image',[$this,'DefaultImage'])];
+
+    }
+    public function DefaultImage($image){
+        if($image=null){
+            imagepng($image);
+        }
+    }
+
 }
