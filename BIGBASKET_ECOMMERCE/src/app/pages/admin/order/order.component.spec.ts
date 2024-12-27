@@ -11,7 +11,7 @@ describe('OrderComponent', () => {
       imports: [OrderComponent]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(OrderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

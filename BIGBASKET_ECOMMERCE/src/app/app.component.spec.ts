@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'BIGBASKET_ECOMMERCE' title`, () => {
+  it(`should have the 'bigbasket_ecommerce_angular' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('BIGBASKET_ECOMMERCE');
+    expect(app.title).toEqual('bigbasket_ecommerce_angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, BIGBASKET_ECOMMERCE');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, bigbasket_ecommerce_angular');
   });
 });

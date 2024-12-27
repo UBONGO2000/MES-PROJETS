@@ -11,7 +11,7 @@ describe('CustomerCartComponent', () => {
       imports: [CustomerCartComponent]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(CustomerCartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
